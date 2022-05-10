@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">   
+        <div class="titulo" style="display: block;">
+            <h1>CPU KOMBAT</h1>      
+                <ul>
+                    <li><a href='game.html'>Start</a></li>
+                    <li onclick="mode()">Mode</li>
+                    <li>Sound</li>
+                    <li>Exit</li>
+                </ul>
+        </div>
+        <div class="mode" style="display: none;">
+            <h1>Select Difficulty</h1>
+            <ul>
+                <li>Easy</li>
+                <li>Normal</li>
+                <li>Hard</li>
+                <li>CPU Master</li>
+            </ul>
+        </div>
+            <div class="footer">Made by Ivan Freire de Medeiros Miranda</div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    var mode = 1;
+
+    function mode(){
+
+        getElementsByClassName('titulo').style.display = 'none';
+        getElementsByClassName('mode').style.display = 'block';
+    }
+</script>
