@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="style-game.css">
 </head>
-<body>
-    
+<body onkeyup="config()">
+    <div class="main">
+        <div class="desc">
+            <div class="vida">
+                <h3>Aluno SPTECH</h3>
+                <div class="barra"></div>
+            </div>
+            <p style="font-family: 'Courier New', Courier, monospace; font-size: 100px; font-weight: 1000; text-align: center; color: white;">x</p>
+            <div class="vida">
+                <h3>Marise</h3>
+                <div class="barra"></div>
+            </div>
+        </div>
+        <!-- Parte do game com as perguntas e os bonecos-->
+        <div class="game">
+            <div class="boneco">
+                <img src="imges/subzeroPerna.png">
+            </div>
+            <div class="pergunta">
+                <p>Qual o nome usado para o processamento que serve como um cerebro pro computador</p>
+                <input type="text" id="inp-cpu" placeholder="Digite aqui">
+            </div>
+            <div class="boneco">
+                <img src="imges/chapeu.png">
+            </div>
+        </div>
+        <!-- Parte das dicas -->
+       <!-- Nao vai ter mais -->
+        <!--Rodapé-->
+        <div class="footer">
+            Made by Ivan Freire de Medeiros Miranda      
+        </div>
+    </div>
 </body>
 </html>
+
+<script src="script-game.js"></script>
