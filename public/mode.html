@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="player" autoplay="autoplay" loop>
+        <source src="audio/funkl.mp3" type="audio/mp3" />
+      </audio>
+    <div class="container">   
+        <div class="mode">
+            <h1>Select Difficulty</h1>
+            <ul>
+                <li id="facil">Easy</li>
+                <li id="normal">Normal</li>
+                <li id="hard">Hard</li>
+                <li id="master">CPU Master</li>
+            </ul>
+        </div>
+        <a href='index.html'><div class="voltar">Back</div></a>
+
+        <div id="som">
+            <div class="btn">
+            <button onclick="document.getElementById('player').play()" id="btn1"></button>
+        </div>
+        <div class="btn">
+            <button onclick="document.getElementById('player').pause()" id="btn2"></button>
+        </div>
+        </div>
+    </div>
+    
+            <div class="footer">Made by Ivan Freire de Medeiros Miranda</div>
+    </div>
+</body>
+</html>
+
+<script src="script-game.js"></script>

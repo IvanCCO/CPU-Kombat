@@ -21,12 +21,13 @@
 
     a{
         text-decoration: none;
+        color: rgb(180, 0, 0);
     }
 
   
     .container {
-        background: rgb(111,5,5);
-        background: linear-gradient(90deg, rgba(111,5,5,0.8183648459383753) 0%, rgba(41,4,4,0.835171568627451) 54%, rgba(0,0,0,0.7763480392156863) 100%);
+        background: rgb(44, 7, 7);
+        background: linear-gradient(90deg, rgba(20, 1, 1, 0.541) 0%, rgba(36, 2, 2, 0.664) 54%, rgba(5, 5, 5, 0.842) 100%);
         width: 90vh;
         height: 90vh;
         background-color: rgba(230, 230, 230, 0.082);
@@ -77,6 +78,46 @@
         transition: all ease-in-out 400ms;
 
     }
+    /* Ajustando configurações dos botões do audio */
+
+    #som button{
+        border: 2px solid rgb(53, 34, 34);
+        height: 70px;
+        width: 70px;
+        margin: 20px;
+        border-radius: 50%;
+        background-color: rgb(122, 122, 122);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    #som {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn{
+        height: fit-content;
+        width: fit-content;
+        background-color: rgba(71, 16, 16, 0);
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    #btn1{
+        background: url(imges/somAtivo.png);
+    }
+
+    #btn2{
+        background: url(imges/mute.png);
+    }
+  
+
+    /* Rodapé */
 
     .footer {
 
@@ -90,6 +131,9 @@
         opacity: 30%;
     }
 
+    /* Fim do rodapé */
+
+    /* Começo da parte das dificuldades */
 
 
     .container .mode{
@@ -115,7 +159,7 @@
         margin-bottom: 50px;
         text-align: center;
         width: 100%;
-        border-bottom: 4px solid rgba(255, 255, 255, 0.356);
+        cursor: pointer;
     
     }
 
@@ -128,7 +172,45 @@
         color: white;
         text-align: center;
         transition: all ease-in-out 200ms;
+        
 
+    }
+
+    #master:hover{
+        font-size: 41px;
+        font-family: 1000;
+        border-radius: 5px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        transition: all ease-in-out 200ms;
+    }
+
+    /* Configurando botão de voltar */
+    .voltar {
+        height: 50px;
+        width: 150px;
+        background-color: red;
+        border-radius: 10px;
+        color: white;
+        font-weight: 1000;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .voltar:hover{
+        height: 50px;
+        width: 150px;
+        background-color: white;
+        border-radius: 10px;
+        color: red;
+        font-weight: 1000;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all ease-in-out 300ms;
     }
 
     

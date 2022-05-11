@@ -8,37 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="player" autoplay="autoplay" loop>
+        <source src="audio/funkl.mp3" type="audio/mp3" />
+      </audio>
     <div class="container">   
         <div class="titulo" style="display: block;">
             <h1>CPU KOMBAT</h1>      
                 <ul>
-                    <li><a href='game.html'>Start</a></li>
-                    <li onclick="mode()">Mode</li>
+                   <a href="game.html"><li>Start</li></a>
+                    <a href="mode.html"><li>Mode</li></a>
                     <li>Sound</li>
-                    <li>Exit</li>
+                    <a href="javascript:close_tab();"><li>Exit</li></a>
                 </ul>
         </div>
-        <div class="mode" style="display: none;">
-            <h1>Select Difficulty</h1>
-            <ul>
-                <li>Easy</li>
-                <li>Normal</li>
-                <li>Hard</li>
-                <li>CPU Master</li>
-            </ul>
+        <div id="som">
+            <div class="btn">
+            <button onclick="document.getElementById('player').play()" id="btn1"></button>
         </div>
+        <div class="btn">
+            <button onclick="document.getElementById('player').pause()" id="btn2"></button>
+        </div>
+        </div>
+
             <div class="footer">Made by Ivan Freire de Medeiros Miranda</div>
     </div>
 </body>
 </html>
 
-<script>
-
-    var mode = 1;
-
-    function mode(){
-
-        getElementsByClassName('titulo').style.display = 'none';
-        getElementsByClassName('mode').style.display = 'block';
-    }
-</script>
+<script src="script-game.js"></script>
