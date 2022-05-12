@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio id="player" autoplay="autoplay" loop>
-        <source src="audio/funkl.mp3" type="audio/mp3" />
+    <audio id="player" autoplay="autoplay" loop src="audio/funkl.mp3">
       </audio>
     <div class="container">   
         <div class="titulo" style="display: block;">
@@ -17,7 +16,7 @@
                 <ul>
                    <a href="game.html"><li>Start</li></a>
                     <a href="mode.html"><li>Mode</li></a>
-                    <li>Sound</li>
+                    <li><button onclick="sound()">Sound</button></li>
                     <a href="javascript:close_tab();"><li>Exit</li></a>
                 </ul>
         </div>
@@ -36,3 +35,16 @@
 </html>
 
 <script src="script-game.js"></script>
+
+<script>
+    var egg = 0;
+
+    function sound(){
+        egg++;
+
+        if(egg > 50){
+            player.src = 'audio/subzero.mp3'
+        }
+
+    }
+</script>

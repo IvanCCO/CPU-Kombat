@@ -47,7 +47,6 @@
 
     .barra{
         height: 30px;
-        width: 200px;
         background-color: rgb(173, 22, 22);
     }
 
@@ -88,12 +87,6 @@
         border-radius: 7px;
     }
 
-    .dicas{
-       
-        height: auto;
-        width: auto;
-    }
-
     /* Rodapé */
     .footer {
 
@@ -105,4 +98,18 @@
         position: fixed;
         text-align: center;
         
+    }
+
+    button{
+        height: 50px;
+        width: 100px;
+        right: 48%;
+        position: fixed;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid black;
+
     }

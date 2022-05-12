@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onkeyup="mode()">
     <audio id="player" autoplay="autoplay" loop>
         <source src="audio/funkl.mp3" type="audio/mp3" />
       </audio>
@@ -15,10 +15,10 @@
         <div class="mode">
             <h1>Select Difficulty</h1>
             <ul>
-                <li id="facil" value="1">Easy</li>
-                <li id="normal" value="2">Normal</li>
-                <li id="hard" value="3">Hard</li>
-                <li id="master" value="4">CPU Master</li>
+                <li id="facil"><button id="1" onclick="easy()">Easy</button></li>
+                <li id="normal"><button id='2'onclick="normal()">Normal</button></li>
+                <li id="hard"><button id="3" onclick="hard()">Hard</button></li>
+                <li id="master"><button id="4" onclick="master()">CPU Master</button></li>
             </ul>
         </div>
         <a href='index.html'><div class="voltar">Back</div></a>

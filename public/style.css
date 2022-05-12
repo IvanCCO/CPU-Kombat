@@ -67,6 +67,22 @@
     
     }
 
+    .titulo button{
+        font-size: 40px;
+        font-weight: 600;
+        color: rgb(190, 22, 22);
+        background: none;
+        font-family: 'Playfair Display SC', serif;
+    }
+
+
+    .titulo button:hover{
+        font-size: 41px;
+        font-weight: 1000;
+        color: white;
+        transition: all ease-in-out 300ms;
+        cursor: pointer;
+    }
     .titulo li:hover{
         font-size: 41px;
         font-family: 1000;
@@ -75,9 +91,11 @@
         background-color: red;
         color: white;
         text-align: center;
-        transition: all ease-in-out 400ms;
+        transition: all ease-in-out 300ms;
 
     }
+
+
     /* Ajustando configurações dos botões do audio */
 
     #som button{
@@ -165,7 +183,7 @@
 
     .mode li:hover{
         font-size: 35px;
-        font-family: 1000;
+        font-weight: 1000;
         border-radius: 5px;
         width: 100%;
         background-color: rgb(212, 20, 20);
@@ -174,6 +192,24 @@
         transition: all ease-in-out 200ms;
         
 
+    }
+
+    .mode button{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        background: none;
+        color: red;
+        font-family: 'Playfair Display SC', serif;
+    }
+
+    .mode button:hover {
+        font-size: 35px;
+        font-weight: 1000;
+        text-align: center;
+        color: white;
+        transition: all ease-in-out 200ms;
     }
 
     #master:hover{
