@@ -121,13 +121,16 @@
 
 <script>
 
-    var barraAlunoVar = barraSp.style.width  = 200 + 'px';
-    var barraMariseVar = barraMa.style.width = 200 + 'px';
-  
+   
+    var barraVidaSp = 300;
+    var barraVidaMa = 300;
 
+    
+    
     function verificar(){
         // Definindo a variável das perguntas
-
+        console.log(barraVidaMa);
+        
         var pergunta1 = inp1.value;
         var pergunta2 = inp2.value;
         var pergunta3 = inp3.value;
@@ -153,117 +156,249 @@
 
             div1.style.display = 'none';
             div2.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp1.value = '';
+            
+        }else{
+            
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp1.value = '';
 
-        }else{}
+        }
 
         if(pergunta2 == 'ULA'){
 
             div2.style.display = 'none';
             div3.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp2.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp2.value = '';
+        }
         
 
         if(pergunta3 == 'Registradores'){
 
             div3.style.display = 'none';
             div4.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp3.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp3.value = '';
+
+        }
 
         if(pergunta4 == 'RAM'){
 
             div4.style.display = 'none';
             div5.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp4.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp4.value = '';
+        }
 
 
         if(pergunta5 == 'ROM'){
 
             div5.style.display = 'none';
             div6.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp5.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp5.value = '';
+        }
 
         if(pergunta6 == 'Eprom'){
 
             div6.style.display = 'none';
             div7.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
 
-        }else{}
+            inp6.value = '';
+
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp6.value = '';
+        }
 
 
         if(pergunta7 == 'Flash'){
 
             div7.style.display = 'none';
             div8.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp7.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp7.value = '';
+        }
 
         if(pergunta8 == 'Memória De Massa'){
 
             div8.style.display = 'none';
             div9.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp8.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp8.value = '';
+        }
 
         if(pergunta9 == 'DMA'){
 
             div9.style.display = 'none';
             div10.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp9.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp9.value = '';
+        }
 
         if(pergunta10 == 'CS'){
 
             div10.style.display = 'none';
             div11.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp10.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp10.value = '';
+        }
 
         if(pergunta11 == 'Address Bus'){
 
             div11.style.display = 'none';
             div12.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp11.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp11.value = '';
+        }
 
         if(pergunta12 == 'Data Bus'){
 
             div12.style.display = 'none';
             div13.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp12.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp12.value = '';
+        }
 
         if(pergunta13 == 'I5'){
 
             div13.style.display = 'none';
             div14.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp13.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp13.value = '';
+        }
 
         if(pergunta14 == 'I7'){
 
             div14.style.display = 'none';
             div15.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp14.value = '';
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp14.value = '';
+        }
 
         if(pergunta15 == 'Dual Core'){
 
             div15.style.display = 'none';
             div16.style.display = 'block';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp15.value = '';
 
-        }else{}
+
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp15.value = '';
+        }
 
         if(pergunta16 == 'Quad Core'){
 
             div16.style.display = 'none';
             verificar.style.display = 'none';
+            barraVidaMa -= 18;
+            barraMa.style.width = barraVidaMa + 'px';
+            inp16.value = '';
             // Video fatality
 
-        }else{}
+        }else{
+             
+            barraVidaSp -= 100;
+            barraSp.style.width = barraVidaSp + 'px';
+            inp16.value = '';
+        }
 
        
 
