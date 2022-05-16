@@ -16,7 +16,7 @@
             </div>
             <p style="font-family: 'Courier New', Courier, monospace; font-size: 100px; font-weight: 1000; text-align: center; color: white;">x</p>
             <div class="vida">
-                <h3>Marise</h3>
+                <h3>Inimigo</h3>
                 <div class="barra" id="barraMa"></div>
             </div>
         </div>
@@ -114,6 +114,10 @@
             Made by Ivan Freire de Medeiros Miranda      
         </div>
     </div>
+
+    <div id="win" style="background-color: black; height: 96vh; width: 100vw; color: white; font-weight: bold; font-size: 100px; display: none; place-items: center; position: fixed;">Você venceu</div>
+    <div id="defeat" style="background-color: black; height: 96vh; width: 100vw; color: white; font-weight: bold; font-size: 100px; display: none; place-items: center; position: fixed; opacity: 100%;">Derrotado</div>
+
 </body>
 </html>
 
@@ -152,256 +156,281 @@
 
 
         // Fazendo o jogo funcionar
-        if(pergunta1 == 'CPU'){
+        if(pergunta1.toUpperCase() == 'CPU'){
 
             div1.style.display = 'none';
             div2.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp1.value = '';
             
-        }else{
+        }else if (pergunta1 != ''){
             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp1.value = '';
-
+            barraSp.style.width = 0;
+            barraSp.style.transition = 'all ease-in-out 3000ms';
+            defeat.style.display = 'grid';
+            defeat.style.transition = 'opacity ease-in-out 3s';
         }
 
-        if(pergunta2 == 'ULA'){
+        if(pergunta2.toUpperCase() == 'ULA'){
 
             div2.style.display = 'none';
             div3.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp2.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp2.value = '';
+        }else if (pergunta2 != ''){
+
+            barraSp.style.width = 0;
+            barraSp.style.transition = 'all ease-in-out 3000ms';
+            defeat.style.display = 'grid';
+            defeat.style.transition = 'all ease-in-out 3s';
+          
         }
         
 
-        if(pergunta3 == 'Registradores'){
+        if(pergunta3.toUpperCase() == 'REGISTRADORES'){
 
             div3.style.display = 'none';
             div4.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp3.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp3.value = '';
-
+        }else if (pergunta3 != '') {
+         
+            barraSp.style.width = 0;
+            barraSp.style.transition = 'all ease-in-out 3000ms';
+            defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
         }
 
-        if(pergunta4 == 'RAM'){
+        if(pergunta4.toUpperCase() == 'RAM'){
 
             div4.style.display = 'none';
             div5.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp4.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp4.value = '';
+        }else if (pergunta4 != ''){
+            barraSp.style.width = 0;
+            barraSp.style.transition = 'all ease-in-out 3000ms';
+            defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
         }
 
 
-        if(pergunta5 == 'ROM'){
+        if(pergunta5.toUpperCase() == 'ROM'){
 
             div5.style.display = 'none';
             div6.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp5.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp5.value = '';
+        }else if (pergunta5 != ''){
+         
+            barraSp.style.width = 0;
+            barraSp.style.transition = 'all ease-in-out 3000ms';
+            defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
         }
 
-        if(pergunta6 == 'Eprom'){
+        if(pergunta6.toUpperCase() == 'EPROM'){
 
             div6.style.display = 'none';
             div7.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
-
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp6.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp6.value = '';
-        }
+        }else if (pergunta6 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
 
-        if(pergunta7 == 'Flash'){
+        if(pergunta7.toUpperCase() == 'FLASH'){
 
             div7.style.display = 'none';
             div8.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp7.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp7.value = '';
-        }
+        }else if (pergunta7 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
-        if(pergunta8 == 'Memória De Massa'){
+        if(pergunta8.toUpperCase() == 'MEMÓRIA DE MASSA'){
 
             div8.style.display = 'none';
             div9.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp8.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp8.value = '';
-        }
+        }else if (pergunta8 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
-        if(pergunta9 == 'DMA'){
+        if(pergunta9.toUpperCase() == 'DMA'){
 
             div9.style.display = 'none';
             div10.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp9.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp9.value = '';
-        }
-
-        if(pergunta10 == 'CS'){
+        }else if (pergunta9 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
+        if(pergunta10.toUpperCase() == 'CS'){
 
             div10.style.display = 'none';
             div11.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp10.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp10.value = '';
-        }
+        }else if (pergunta10 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
-        if(pergunta11 == 'Address Bus'){
+        if(pergunta11.toUpperCase() == 'ADDRESS BUS'){
 
             div11.style.display = 'none';
             div12.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp11.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp11.value = '';
-        }
+        }else if (pergunta11 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
-        if(pergunta12 == 'Data Bus'){
+        if(pergunta12.toUpperCase() == 'DATA BUS'){
 
             div12.style.display = 'none';
             div13.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp12.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp12.value = '';
-        }
+        }else if (pergunta12 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+         
+     }
 
-        if(pergunta13 == 'I5'){
+        if(pergunta13.toUpperCase() == 'I5'){
 
             div13.style.display = 'none';
             div14.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp13.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp13.value = '';
-        }
+        }else if (pergunta13 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
-        if(pergunta14 == 'I7'){
+        if(pergunta14.toUpperCase() == 'I7'){
 
             div14.style.display = 'none';
             div15.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp14.value = '';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp14.value = '';
-        }
+        }else if (pergunta14 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
-        if(pergunta15 == 'Dual Core'){
+        if(pergunta15.toUpperCase() == 'DUAL CORE'){
 
             div15.style.display = 'none';
             div16.style.display = 'block';
             barraVidaMa -= 18;
             barraMa.style.width = barraVidaMa + 'px';
+            barraMa.style.transition = 'all ease-in-out 1s';
             inp15.value = '';
 
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp15.value = '';
-        }
+        }else if (pergunta15 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }
 
-        if(pergunta16 == 'Quad Core'){
+        if(pergunta16.toUpperCase() == 'QUAD CORE'){
 
             div16.style.display = 'none';
-            verificar.style.display = 'none';
-            barraVidaMa -= 18;
+            barraVidaMa -= 20;
             barraMa.style.width = barraVidaMa + 'px';
             inp16.value = '';
-            // Video fatality
+            win.style.display = 'grid';
+            win.style.transition = 'all ease-in-out 3s';
 
-        }else{
-             
-            barraVidaSp -= 100;
-            barraSp.style.width = barraVidaSp + 'px';
-            inp16.value = '';
-        }
 
-       
-
-        
+        }else if (pergunta16 != ''){
+         
+         barraSp.style.width = 0;
+         barraSp.style.transition = 'all ease-in-out 3000ms';
+         defeat.style.display = 'grid';
+         defeat.style.transition = 'all ease-in-out 3s';
+     }       
     }
 </script>
